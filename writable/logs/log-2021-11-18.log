@@ -1,0 +1,36 @@
+CRITICAL - 2021-11-18 06:11:01 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\crud_ci\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\crud_ci\system\Common.php(1217): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\crud_ci\app\Controllers\Pages.php(13): view('pages/home', Array)
+#3 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(936): App\Controllers\Pages->index()
+#4 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_ci\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_ci\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2021-11-18 06:11:16 --> mysqli_sql_exception: Table 'dbpbo.tbl_mhs' doesn't exist in C:\xampp\htdocs\crud_ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\crud_ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\crud_ci\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\crud_ci\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\crud_ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\crud_ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\crud_ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\crud_ci\app\Models\MahasiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\crud_ci\app\Controllers\Mahasiswa.php(22): App\Models\MahasiswaModel->getMahasiswa()
+#8 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(936): App\Controllers\Mahasiswa->index()
+#9 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#10 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\crud_ci\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\crud_ci\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-11-18 06:11:16 --> Invalid file: mahasiswa/index.php
+#0 C:\xampp\htdocs\crud_ci\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mahasiswa/index...')
+#1 C:\xampp\htdocs\crud_ci\system\Common.php(1217): CodeIgniter\View\View->render('mahasiswa/index', Array, true)
+#2 C:\xampp\htdocs\crud_ci\app\Controllers\Mahasiswa.php(26): view('mahasiswa/index', Array)
+#3 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(936): App\Controllers\Mahasiswa->index()
+#4 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#5 C:\xampp\htdocs\crud_ci\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_ci\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_ci\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
